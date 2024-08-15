@@ -59,7 +59,7 @@ We can work backwards through the array.
 At every position, the `ith` value is the maximum number of positions we can jump.
 
 So if we examine `i + max_jump` and discover that it is greater than or equal to the `goal`,
-then we can reset the `goal` to be that of position 'i'.
+then we can reset the `goal` to be that of position `i`.
 
 The acceptance criteria is a `goal` that is equal to `0` returns `true`.
 
