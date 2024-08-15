@@ -27,15 +27,15 @@ positions > 0  1  2  3  4
 ```
 We start at position `0`.
 
-We can jump `2` positions; the value is `2`.
+We can jump `2` positions; the value of position `0` is `2`.
 
 We are at position `2`.
 
-We can jump `1` position; the value is `1`.
+We can jump `1` position; the value of position `2` is `1`.
 
 We are at position `3`.
 
-We can jump `1` position; the value is `1`.
+We can jump `1` position; the value of position `3` is `1`.
 
 We are at position `4`.
 
@@ -56,12 +56,12 @@ then the `goal` is `n - 1`, the final index in the array.
 
 We can work backwards through the array.
 
-At every position, the `ith` value is the maximum position we can jump.
+At every position, the `ith` value is the maximum number of positions we can jump.
 
-So if we examine `i + max_jump` and discover that it is greater than the `goal`,
+So if we examine `i + max_jump` and discover that it is greater than or equal to the `goal`,
 then we can reset the `goal` to be that of position 'i'.
 
-The acceptance criteria is a `goal` equal to `0` returns `true`.
+The acceptance criteria is a `goal` that is equal to `0` returns `true`.
 
 Otherwise the solution returns `false`.
 
