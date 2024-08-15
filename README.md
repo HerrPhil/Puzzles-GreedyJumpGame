@@ -25,33 +25,34 @@ The input is:
 nums =     [2, 3, 1, 1, 4]
 positions > 0  1  2  3  4
 ```
-We start at position 0.
+We start at position `0`.
 
-We can jump 2 positions; the value is 2.
+We can jump `2` positions; the value is `2`.
 
-We are at position 2.
+We are at position `2`.
 
-We can jump 1 position; the value is 1.
+We can jump `1` position; the value is `1`.
 
-We are at position 3.
+We are at position `3`.
 
-We can jump 1 position; the value is 1.
+We can jump `1` position; the value is `1`.
 
-We are at position 4.
+We are at position `4`.
 
 We reached our goal.
 
-Therefore, we return true.
+Therefore, we return `true`.
 
 Intuition, from past experience, suggests to do back-tracking.
+
 However, that is very slow.
 
 The optimal is to be greedy.
 
 This means the solution asserts we do reach the goal.
 
-Given that n = the number of values,
-then the goal is n - 1, the final index in the list.
+Given that `n` = the number of values in `nums`,
+then the `goal` is `n - 1`, the final index in the array.
 
 We can work backwards through the array.
 
