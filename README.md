@@ -115,3 +115,41 @@ We are out of positions.
 
 When the `goal` is `0`, then we return `true`.
 The `goal` is `0`, so the solution does return `true`.
+
+### Observation of leetcode solution suggestion
+
+It is a lenient solution.
+
+When the lesson task says the goal is to reach the last index,
+then the solution allows for the last index to be reached or surpassed.
+
+When I stress-test the solution with inputs like:
+```
+[3, 3, 3, 3, 0]
+or
+[4, 4, 4, 4, 0]
+or
+[5, 5, 5, 5, 0]
+```
+then the solution returns a true result.
+
+It is not assuming that the solution must exactly reach the last index.
+
+I mean, we could write that solution, too.
+
+However, the lenient solution is allowed.
+
+## Alternate solution
+
+After pouring over the suggested, example solution,
+I noted that jump values of zero (0) are important.
+
+A few observations:
+
+1. the solution does not care if the jump value of the last index is zero (0).
+2. the solution will reach or surpass the goal of the last index
+   when all jump values before the last index are one (1) or more.
+3. the presence of a zero before the last index does not guarantee that the goal is not reached.
+4. when a jump lands on an index with a zero (0) jump value, then the solution is stuck.
+   Current position + zero is always current position.
+
