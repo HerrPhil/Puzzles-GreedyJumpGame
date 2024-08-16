@@ -13,7 +13,11 @@ public class GreedyJumpGame {
         }
 
 //        int [] input = new int [] {2, 3, 1, 1, 4}; // result is true
-        int [] input = new int [] {3, 2, 1, 0, 4}; // result is false
+//        int [] input = new int [] {3, 2, 1, 0, 4}; // result is false
+//        int [] input = new int [] {2, 2, 2, 2, 0}; // result is ????
+//        int [] input = new int [] {3, 3, 3, 3, 0}; // result is true
+//        int [] input = new int [] {4, 4, 4, 4, 0}; // result is true
+        int [] input = new int [] {5, 5, 5, 5, 0}; // result is true
 
         GreedyJumpGame greedyJumpGame = new GreedyJumpGame(input);
 
