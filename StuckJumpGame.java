@@ -54,7 +54,8 @@ public class StuckJumpGame {
         int goal = n - 1;
         int position = 0;
 
-        // Greedily work backwards through the array
+        // progress forward through the array
+        // and fail fast when a jump value is zero (0)
         while (position < goal) {
 
             int jumpValue = input[position];
